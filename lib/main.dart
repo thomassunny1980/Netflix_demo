@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:netflix_demo/presentation/main_page/widgets/main_page_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,16 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(),
+      home: const MainPageScreen(),
     );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container();
   }
 }
