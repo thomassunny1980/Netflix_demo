@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:netflix_demo/presentation/widgets/app_bar_widgets.dart';
 
 class NewAndHotScreen extends StatelessWidget {
   const NewAndHotScreen({Key? key}) : super(key: key);
@@ -6,9 +7,6 @@ class NewAndHotScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Center(
-        child: Text('New And Hot Screen'),
-      ),
-    );
+        body: SafeArea(child: AppBarWidgets(title: 'Hot&New')));
   }
 }
